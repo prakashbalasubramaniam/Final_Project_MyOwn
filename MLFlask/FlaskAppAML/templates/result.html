@@ -1,0 +1,25 @@
+﻿{% extends "layout.html" %}
+
+{% block content %}
+
+<h3>{{ title }}</h3>
+
+{{ result|safe }}
+
+<h3>Snapshot from AzureML interface</h3>
+This was implemented using Azure ML Studio.<br /><br />
+<img src="/static/images/AzureMLins.png" />
+
+<h3>Model Comparison 2 way Decision Forest vs 2 Class Boosted Decision</h3>
+This was implemented using Azure ML Studio.<br /><br />
+<img src="/static/images/modelscomparisonblocks.png" />
+
+<h3>ROC score for 2 way Decision Forest</h3>
+This was implemented using Azure ML Studio.<br /><br />
+<img src="/static/images/rocdecisionforest.png" />
+
+<h3>ROC score for 2 Class Boosted Decision</h3>
+This was implemented using Azure ML Studio.<br /><br />
+<img src="/static/images/roc2classboosteddecision.png" />
+
+{% endblock %}

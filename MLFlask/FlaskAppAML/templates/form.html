@@ -1,0 +1,51 @@
+﻿{% extends "layout.html" %}
+
+{% block content %}
+<h2>Determine the existing customer marketing call response based on the inputs below</h2>
+<form method=post>
+    <dl>
+        <p>
+            <h3>Customer Lifetime Value</h3>
+            Choose value from 1800 to 18000<br/><br/>
+            {{form.lifetime}}
+        </p>
+
+        <p>
+            <h3>Employment Status</h3> 
+            Choose Employed, Unemployed, Disabled, Medical Leave, Retired<br /><br />
+            {{form.employment}}
+        </p>
+
+        <p>
+            <h3>Income Value</h3>
+            Choose value from 0 to 99000 dollars<br/><br/>
+            {{form.income}}
+        </p>
+
+        <p>
+            <h3>Monthly Premium Auto</h3> 
+            Choose value from 62.00 to 290.00 dollars <br /><br />
+            {{form.premium}}
+        </p>
+
+        <p>
+            <h3>Months Since Last Claim</h3>
+            Choose value from 0 to 35 months<br/><br/>
+            {{form.lastclaim}}
+        </p>
+
+        <p>
+            <h3>Months Since Policy Inception</h3> 
+            Choose value from 0 to 99 months <br /><br />
+            {{form.inception}}
+        </p>
+
+        <p>
+            <h3>Total Claim Amount</h3> 
+            Choose value from 0.00 to 2800.00 dollars <br /><br />
+            {{form.claimamount}}
+        </p>
+    </dl>
+    <p><input type="submit" value="submit"</p>
+ </form>
+{% endblock %}
