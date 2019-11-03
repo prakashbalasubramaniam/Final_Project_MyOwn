@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}.</h2>
+<!-- <h3>{{ message }}</h3> -->
+
+<h3>Customer base states by sales channel</h3>
+The map shows California and Oregon and Arizona have the highest no. of clients.<br />
+Our most popular sales channel are through agents and branches with online being the less popular option.<br /><br />
+<img src="/static/images/StatesDash.png" />
+
+<h3>Customer Background Trend</h3>
+Majority of our customers are Married-Employed and Single-Unemployed.<br />
+We're less popular to customers that are above Bachelors degree.<br /><br />
+<img src="/static/images/MaritalEducationDash.png" />
+
+<h3>Vehicle class Policy</h3>
+There're opportunitues for us to increase our customer based that owns Luxury and Sport cars.<br />
+Majority policy holders are from medsize vechicles. The personal auto policy that we have the most and again we have another opportunity
+to increase Special and Corporate Auto policies.<br /><br />
+<img src="/static/images/CarSizDash.png" />
+
+<h3>Offers Trend and Monthly Premium</h3>
+Offer 1 and 3 helped the most to retain customers. Our monthly premium averaging between $80 to $100.<br /><br />
+<img src="/static/images/AvgMthOffer-PremiumDash.png" />
+
+<h3>Offers Trend and Monthly Premium</h3>
+The Special Auto has the most open claims ~15% vs ~13% Personal Auto. Again its something our company needs to focus in order to improve
+Special Auto customer base.<br /><br />
+<img src="/static/images/OpenClaimDash.png" />
+
+{% endblock %}
