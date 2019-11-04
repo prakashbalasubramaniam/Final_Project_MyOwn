@@ -103,14 +103,14 @@ def home():
         message='Demonstrating a website using Azure ML Api')
 
 
-@app.route('/contact')
-def contact():
+@app.route('/athena')
+def athena():
     """Renders the contact page."""
     return render_template(
-        'contact.html',
-        title='Contact',
+        'athena.html',
+        title='AWS Athena & Tableau',
         year=datetime.now().year,
-        message='Your contact page.'
+        # message='Your contact page.'
     )
 
 @app.route('/custtrend')

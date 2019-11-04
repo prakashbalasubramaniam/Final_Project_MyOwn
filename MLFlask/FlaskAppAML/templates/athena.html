@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}.</h2>
+<!-- <h3>{{ message }}</h3> -->
+
+<h3>AWS Tableau Connection</h3>
+Block diagram shows how we used Tableau to connect to AWS by uploading dataset to S3 and query it.<br />
+We uploaded our dataset into a S3 bucket and then used Glue to create a table.<br />
+Through Athena layer, we connected Tableau to query the table and plot the "Customer Trend" charts.<br /><br />
+<img src="/static/images/amazonathena.png" />
+
+{% endblock %}
