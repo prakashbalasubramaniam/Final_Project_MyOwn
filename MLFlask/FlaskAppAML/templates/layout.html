@@ -18,13 +18,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="/" class="navbar-brand">Response Predictor</a>
+                <!-- <a href="/" class="navbar-brand">Response Predictor</a> -->
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav">                    
                     <li><a href="{{ url_for('home') }}">Home</a></li>
                     <li><a href="{{ url_for('custtrend') }}">Customer Trend</a></li>
                     <li><a href="{{ url_for('athena') }}">AWS & Tableau</a></li>
+                    <li><a href="{{ url_for('colab') }}">Google CoLAb</a></li>
+                    <li><a href="{{ url_for('mlvalidation') }}">Azure ML Validation</a></li>
+                    <li><a href="{{ url_for('predictresponse') }}">Response Predictor</a></li>
                 </ul>
             </div>
         </div>

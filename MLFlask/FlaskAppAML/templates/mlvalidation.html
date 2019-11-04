@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}.</h2>
+<!-- <h3>{{ message }}</h3> -->
+
+<h3>Sweep Customer Income vs Response</h3>
+We kept other input features fixed and sweep Customer Income to see returned Response.<br />
+We did see for some Customer Income which we think were incorrect Response.<br /><br />
+<img src="/static/images/cust_income_response.png"/>
+
+<h3>Sweep Customer Lifetime Value vs Response</h3>
+We kept other input features fixed and sweep Customer Lifetime Value to see returned Response.<br />
+We did see for some Customer Lifetime Value which we think were incorrect Response.<br /><br />
+<img src="/static/images/cust_lifetime_response.png"/>
+
+{% endblock %}

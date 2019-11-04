@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}.</h2>
+<!-- <h3>{{ message }}</h3> -->
+
+<h3>Read Dataset and Create a Dataframe</h3>
+We used CoLab to create a dataframe from the dataset we have.<br /><br />
+<img src="/static/images/model_rf_colab_1.png" width="800" height="400"/>
+
+<h3>Used One Hot Encode for Label Features</h3>
+Some label features were One Hot Encode for Machine Learning purpose.<br /><br />
+<img src="/static/images/model_rf_colab_2.png" width="800" height="400"/>
+
+<h3>Finding Critical Features</h3>
+From all the features, we identify the ones that are the important ones to be used later for Azure Machine Learning, rather<br />
+than having all the features to train.<br /><br />
+<img src="/static/images/model_rf_colab_3.png" width="800" height="400"/>
+
+<h3>Model Score and Metric</h3>
+Next we find the score and metric of the trained, tested model.<br /><br />
+<img src="/static/images/model_rf_colab_4.png" width="800" height="400"/>
+
+{% endblock %}

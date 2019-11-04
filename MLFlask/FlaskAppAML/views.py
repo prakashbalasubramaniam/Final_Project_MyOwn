@@ -21,10 +21,22 @@ ML_URL = os.environ.get('URL', "https://ussouthcentral.services.azureml.net/work
 
 HEADERS = {'Content-Type':'application/json', 'Authorization':('Bearer '+ ML_KEY)}
 
-# Our main app page/route
-@app.route('/', methods=['GET', 'POST'])
-@app.route('/home', methods=['GET', 'POST'])
+# Our main app page
+@app.route('/')
 def home():
+    """Renders the contact page."""
+    return render_template(
+        'home.html',
+        title='Gekkos Insurance',
+        year=datetime.now().year,
+        # message='Your contact page.'
+    )
+
+# Predictive response route
+@app.route('/predictresponse', methods=['GET', 'POST'])
+# @app.route('/home', methods=['GET', 'POST'])
+# def home():
+def predictresponse():
     """Renders the home page which is the CNS of the web app currently, nothing pretty."""
 
     form = SubmissionForm(request.form)
@@ -121,6 +133,26 @@ def custtrend():
         title='Customer Base Trend Analysis',
         year=datetime.now().year,
         #message='Your application description page.'
+    )
+
+@app.route('/colab')
+def colab():
+    """Renders the contact page."""
+    return render_template(
+        'colab.html',
+        title='Google CoLab',
+        year=datetime.now().year,
+        # message='Your contact page.'
+    )
+
+@app.route('/mlvalidation')
+def mlvalidation():
+    """Renders the contact page."""
+    return render_template(
+        'mlvalidation.html',
+        title='Azure ML Validation through Python',
+        year=datetime.now().year,
+        # message='Your contact page.'
     )
 
 def do_something_pretty(jsondata):
