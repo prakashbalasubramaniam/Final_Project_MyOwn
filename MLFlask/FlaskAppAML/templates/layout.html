@@ -27,7 +27,18 @@
                     <li><a href="{{ url_for('athena') }}">AWS & Tableau</a></li>
                     <li><a href="{{ url_for('colab') }}">Google CoLAb</a></li>
                     <li><a href="{{ url_for('mlvalidation') }}">Azure ML Validation</a></li>
-                    <li><a href="{{ url_for('predictresponse') }}">Response Predictor</a></li>
+                    <!-- <li><a href="{{ url_for('predictresponse') }}">Response Predictor</a></li> -->
+                    <!-- <li><a href="{{ url_for('premium') }}">Monthly Premium Estimator</a></li> -->
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Predictors
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="{{ url_for('predictresponse') }}">Response Predictor</a>
+                          <a class="dropdown-item" href="{{ url_for('premium') }}">Monthly Premium Estimator</a>
+                        </div>
+                      </li>
                 </ul>
             </div>
         </div>

@@ -147,10 +147,20 @@ def colab():
 
 @app.route('/mlvalidation')
 def mlvalidation():
-    """Renders the contact page."""
+    """Renders the mlvalidation page."""
     return render_template(
         'mlvalidation.html',
         title='Azure ML Validation through Python',
+        year=datetime.now().year,
+        # message='Your contact page.'
+    )
+
+@app.route('/premium')
+def premium():
+    """Renders the premium page."""
+    return render_template(
+        'premium.html',
+        title='California Monthly Premium Estimate',
         year=datetime.now().year,
         # message='Your contact page.'
     )
